@@ -1,0 +1,14 @@
+html, body {
+  background-color: black;
+}
+
+h1 {
+  color: white;
+  font-size: 72px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
