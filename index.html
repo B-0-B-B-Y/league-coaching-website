@@ -1,13 +1,37 @@
 <!DOCTYPE html>
+<html>
 <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Bob Naydenov">
+  <title>The Best League Of Legends Coaching</title>
 
-    <link rel="stylesheet" href="style/index.css">
+  <!--Add all the relevant stylesheets and initial scripts that are needed-->
+  <link rel="stylesheet" href="style/reset.css">
+  <link rel="stylesheet" href="style/index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <!--Add jQuery-->
+  <script src="https://code.jquery.com/jquery-latest.js"></script>
+  <!--Add font awesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
 <body>
-  <div class="menu">
-    <h1>s h a d o w i n f l a m e s</h1>
+
+  <!-- Create the div that holds the main heading content-->
+  <div class="menu animated fadeInUp no-select">
+    <h1 class="animated pulse" id="heading">League of Legends Coaching</h1>
+    <div class="menu-horizontal">
+      <h3  id="title-text">s h a d o w i n f l a m e s</h3>
+      <img id="diamond-picture" src="assets/img/diamond.png"/>
+    </div>
+  </div>
+
+  <!-- The background video used-->
+  <div class="fullscreen-bg">
+    <video loop muted autoplay class="fullscreen-bg__video" src="assets/video/background.mp4">
+    </video>
   </div>
 
 
@@ -15,3 +39,4 @@
 
 <script src="script/index.js"></script>
 </body>
+</html>

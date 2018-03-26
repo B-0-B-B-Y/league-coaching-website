@@ -1,14 +1,111 @@
-html, body {
-  background-color: black;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+*:after, *:before {
+    box-sizing: border-box;
 }
 
-h1 {
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:300,400");
+
+
+@font-face {
+    font-family: "Friz";
+    src: url('../assets/font/Friz Quadrata Bold.otf') format("opentype");
+}
+
+html, body {
+  background-color: black;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+#heading {
+  font-family: "Friz";
+  font-size: 84px;
   color: white;
-  font-size: 72px;
+  z-index: 1;
+  margin-bottom: 3vh;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-delay: 1s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-duration: 3s;
+  -moz-animation-delay: 1s;
+  -moz-animation-iteration-count: infinite;
+  -o-animation-duration: 3s;
+  -o-animation-delay: 1s;
+  -o-animation-iteration-count: infinite;
+}
+
+#title-text {
+  z-index: 1;
+  color: white;
+  font-size: 64px;
+  padding-right: 1vw;
+}
+
+.no-select {
+  -webkit-touch-callout:none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.fullscreen-bg {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  align-items: flex-end;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  z-index: 0;
+}
+
+.fullscreen-bg__video {
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 0;
+  position: absolute;
+}
+
+#diamond-picture {
+  margin-left: 10px;
 }
 
 .menu {
   display: flex;
+  height: 100%;
+  flex-flow: column nowrap;
   align-items: center;
   justify-content: center;
+  z-index: 1;
+}
+
+.menu-horizontal {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 3px solid #fff;
 }
